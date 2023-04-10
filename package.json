@@ -1,0 +1,35 @@
+{
+  "name": "oss-upload-auto-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "ali-oss": "^6.17.1",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/node": "^18.15.11",
+    "ora": "^5.4.1",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.20.2",
+    "slash": "^5.0.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.78.0"
+  },
+  "scripts": {
+    "build": "rimraf -rf ./dist && npx rollup --config",
+    "test": "node ./example/run.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
